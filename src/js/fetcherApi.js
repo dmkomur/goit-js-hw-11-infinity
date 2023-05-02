@@ -24,10 +24,9 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
          const response = await axios.get(this.#BASE_URL, { params: parametrs });
          
          if (response.data.total === 0) { Notify.failure("Sorry, there are no images matching your search query. Please try again."); } 
-         else {Notify.info(`"Hooray! We found ${response.data.total} images."`)}
-
          this.totalPage = Math.ceil(response.data.total / this.per_page);  
          
         return response.data.hits;
      };
 }
+
