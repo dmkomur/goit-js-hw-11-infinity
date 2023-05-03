@@ -64,7 +64,7 @@ body {
 .input {
     height: 40px;
     width: 100%;
-    border: 1px solid #EDE7F6;
+    border: 1px solid #7C4DFF;
     background: #EDE7F6;
     border-radius: 20px;
     padding: 10px;
@@ -75,7 +75,7 @@ body {
 }
 
 .input:focus {
-    border-color: #7C4DFF;
+    border-color: #6200EA;
 }
 
 .input::placeholder {
