@@ -4,26 +4,13 @@ img {
     height: auto;
 }
 
-p {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #37474F;
-}
-
-.body {
-    background-color: #ECEFF1;
+body {
+    background-color: #B388FF;
+    font-family: "Work Sans", sans-serif;
 }
 
 .is-hidden {
     display: none;
-}
-
-.search-form {
-    width: 300px;
-    margin: 0 auto;
 }
 
 .container {
@@ -41,45 +28,78 @@ a {
 }
 
 .photo-card {
-    max-width: 280;
+    width: 280px;
+    height: 210px;
     border-radius: 4px;
     overflow: hidden;
-    background-color: #CFD8DC;
     box-shadow: 5px 6px 11px -9px #000000;
+    transform: scale(1);
+    transition: transform 250ms ease-out;
 }
 
-.info {
-    padding: 8px;
-
+.photo-card:hover {
+    transform: scale(1.04);
 }
 
 .search-block {
     height: auto;
     padding: 8px 0;
-    background-color: #455A64;
+    background-color: #7C4DFF;
     position: fixed;
+    z-index: 1;
     width: 100%;
     box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.search-form {
+    margin: 0 auto;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+
+}
+
+.input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #B388FF;
+    background: #B388FF;
+    border-radius: 20px;
+    padding: 10px;
+    padding-right: 100px;
+    outline: none;
+    transition: border-color 250ms ease-in;
+    color: #311B92;
+}
+
+.input:focus {
+    border-color: #651FFF;
+}
+
+.input::placeholder {
+    color: #E1BEE7;
+    font-family: "Work Sans", sans-serif;
 }
 
 .btn-submit {
-    padding: 8px 16px;
-    margin: 0 auto;
-    border-radius: 4px;
-    color: #263238;
-    font-weight: 700;
-    background-color: #B0BEC5;
+    background-color: #651FFF;
+    color: #E1BEE7;
     border: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: background-color 250ms ease-in;
 }
 
-.load-more {
-    padding: 8px 16px;
-    margin: 0 auto;
-    border-radius: 4px;
-    color: #CFD8DC;
-    background-color: #37474F;
-    border: none;
-    margin: 24px 24px 24px 550px;
-    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
-
+.btn-submit:hover {
+    background-color: #6200EA;
 }
