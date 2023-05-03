@@ -75,7 +75,7 @@ body {
 }
 
 .input:focus {
-    border-color: #651FFF;
+    border-color: #7C4DFF;
 }
 
 .input::placeholder {
@@ -84,7 +84,7 @@ body {
 }
 
 .btn-submit {
-    background-color: #651FFF;
+    background-color: #7C4DFF;
     color: #EDE7F6;
     border: none;
     font-family: "Work Sans", sans-serif;
